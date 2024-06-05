@@ -10,22 +10,34 @@
         <swiper-slide class="">
             <div class="relative">
                 <img src="/img/HOME/HOME 01 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
-                <div class="proyect-name absolute bottom-0 px-4 py-4">
-                    <p>Nombre del proyecto</p>
+                <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
+                    <p class="Acumin-pro-wide">Cala Granadella - Jávea</p>
                 </div>
             </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 02D 2560x1400.jpg" alt="" class="img-slider-home kenburns-bottom">
+            <img src="/img/HOME/HOME 02D 2560x1400.jpg" alt="" class="img-slider-home kenburns-top-left">
+            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
+                <p class="Acumin-pro-wide">Nombre del proyecto</p>
+            </div>
         </swiper-slide>
         <swiper-slide>
             <img src="/img/HOME/HOME 03 2560X1400.png" alt="" class="img-slider-home kenburns-top">
+            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
+                <p class="Acumin-pro-wide">Cala Granadella - Jávea</p>
+            </div>
         </swiper-slide>
         <swiper-slide>
             <img src="/img/HOME/HOME 03b 2560X1400.jpg" alt="" class="img-slider-home kenburns-top-left">
+            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
+                <p class="Acumin-pro-wide">Federación Nacional de Golf</p>
+            </div>
         </swiper-slide>
         <swiper-slide>
             <img src="/img/HOME/HOME 04 2560X1400 ALTA.jpg" alt="" class="img-slider-home kenburns-top">
+            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
+                <p>Villa Forada - Ibiza</p>
+            </div>
         </swiper-slide>
     </swiper>
 </template>
@@ -160,7 +172,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel
     width: 100dvw;
 }
 .proyect-name{
-    background-color: #0000009c;
+    /* background-color: #0000009c; */
     color: white;
     font-size: 30px;
     position: absolute;

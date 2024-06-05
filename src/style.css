@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Acumin-pro-wide';
+  src: url('../src/assets/fonts/acumin-pro-wide.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Acumin-pro-wide-extra-light';
+  src: url('../src/assets/fonts/Acumin-Pro-Wide-ExtraLight.woff.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.Acumin-pro-wide{
+  font-family: 'Acumin-pro-wide';
+}
+.Acumin-pro-wide-extra-light{
+  font-family: 'Acumin-pro-wide-extra-light';
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -94,3 +114,8 @@ button:focus-visible {
 .d-middle-ar { display: flex; align-items: center; justify-content: space-around; }
 .d-middle { display: flex; align-items: center; }
 /**/
+
+/* */
+.slider-process .swiper-pagination-bullet-active{
+  color: red !important
+}

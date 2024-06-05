@@ -2,30 +2,82 @@
      <swiper :modules="modules"
     :slides-per-view="1"
     :rewind="true"
-    :autoplay="{ delay: 8000, disableOnInteraction: false, }"
+    :autoplay="false"
     :effect="'fade'"
     :scrollbar="{ draggable: true }"
     :mousewheel="true"
     navigation>
         <swiper-slide class="">
             <div class="relative">
-                <img src="/img/HOME/HOME 01 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
-                <div class="proyect-name absolute bottom-0 px-4 py-4">
-                    <p>Nombre del proyecto</p>
+                <img src="/img/PROYECTOS/01CalaGranadellaJavea/Cala Granadella - A.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Cala Granadella - Jávea</p>
+                    <p class="proyect-description">Un jardín estrictamente mediterráneo de líneas limpias</p>
                 </div>
             </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 02D 2560x1400.jpg" alt="" class="img-slider-home kenburns-bottom">
+            <div class="relative">
+                <img src="/img/PROYECTOS/02CuestaSanAntonioJavea/CuestaSanAntonio-A.jpg" alt="" class="img-slider-home kenburns-bottom">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Cuesta de San Antonio - Jávea</p>
+                    <p class="proyect-description">Conectando espacios en varios desniveles</p>
+                </div>
+            </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 03 2560X1400.png" alt="" class="img-slider-home kenburns-top">
+            <div class="relative">
+                <img src="/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-A.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Casa Caracol - Jávea</p>
+                    <p class="proyect-description">Jardín sostenible en una vivienda singular de Jávea</p>
+                </div>
+            </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 03b 2560X1400.jpg" alt="" class="img-slider-home kenburns-top-left">
+            <div class="relative">
+                <img src="/img/PROYECTOS/04EsCanarIbiza/EsCanar-01.jpg" alt="" class="img-slider-home kenburns-top-left">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Es Canar - Ibiza</p>
+                    <p class="proyect-description">Jardín mediterráneo con una amplia selección de especies</p>
+                </div>
+            </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 04 2560X1400 ALTA.jpg" alt="" class="img-slider-home kenburns-top">
+            <div class="relative">
+                <img src="/img/PROYECTOS/05Tossalet/TossaletJavea-02.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Tossalet - Jávea</p>
+                    <p class="proyect-description">Jardín de una segunda residencia en Jávea</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative">
+                <img src="/img/PROYECTOS/06MorellJavea/MorellJavea-01.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Morell - Jávea</p>
+                    <p class="proyect-description">Jardín delicado en una vivienda unifamiliar muy cuidada</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative">
+                <img src="/img/PROYECTOS/07CNGOLF/CNGolf-01.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Centro Nacional de Golf - Madrid</p>
+                    <p class="proyect-description">Superficie multifuncional</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative">
+                <img src="/img/PROYECTOS/08Alzira/Alzira-01.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Alzira - Valencia</p>
+                    <p class="proyect-description">Jardín delicado en una vivienda unifamiliar muy cuidada</p>
+                </div>
+            </div>
         </swiper-slide>
     </swiper>
 </template>
@@ -43,127 +95,22 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel
 </script>
 
 <style scoped>
-.kenburns-top {
-    -webkit-animation: kenburns-top 10s ease-out infinite both;
-    animation: kenburns-top 10s ease-out infinite both
-}
-
-@-webkit-keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-        transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-        transform-origin: top
-    }
-}
-
-@keyframes kenburns-top {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-        transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-        transform-origin: top
-    }
-}
-
-/*  */
-.kenburns-bottom {
-    -webkit-animation: kenburns-bottom 10s cubic-bezier(.19, 1.000, .22, 1.000) both;
-    animation: kenburns-bottom 10s cubic-bezier(.19, 1.000, .22, 1.000) both
-}
-
-@-webkit-keyframes kenburns-bottom {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 84%;
-        transform-origin: 50% 84%
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(15px);
-        transform: scale(1.25) translateY(15px);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom
-    }
-}
-
-@keyframes kenburns-bottom {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 84%;
-        transform-origin: 50% 84%
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translateY(15px);
-        transform: scale(1.25) translateY(15px);
-        -webkit-transform-origin: bottom;
-        transform-origin: bottom
-    }
-}
-
-.kenburns-top-left {
-    -webkit-animation: kenburns-top-left 10s ease-out both;
-    animation: kenburns-top-left 10s ease-out both
-}
-
-@-webkit-keyframes kenburns-top-left {
-    0% {
-        -webkit-transform: scale(1) translate(0, 0);
-        transform: scale(1) translate(0, 0);
-        -webkit-transform-origin: 16% 16%;
-        transform-origin: 16% 16%
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translate(-20px, -15px);
-        transform: scale(1.25) translate(-20px, -15px);
-        -webkit-transform-origin: top left;
-        transform-origin: top left
-    }
-}
-
-@keyframes kenburns-top-left {
-    0% {
-        -webkit-transform: scale(1) translate(0, 0);
-        transform: scale(1) translate(0, 0);
-        -webkit-transform-origin: 16% 16%;
-        transform-origin: 16% 16%
-    }
-
-    100% {
-        -webkit-transform: scale(1.25) translate(-20px, -15px);
-        transform: scale(1.25) translate(-20px, -15px);
-        -webkit-transform-origin: top left;
-        transform-origin: top left
-    }
-}
 
 .img-slider-home {
     height: calc(100dvh - 84px);
     width: 100dvw;
 }
 
-.proyect-name {
+.proyect-info{
     background-color: #0000009c;
+
+}
+.proyect-name {
     color: white;
-    font-size: 30px;
-    position: absolute;
+    font-size: 18px;
+}
+.proyect-description {
+    color: white;
+    font-size: 15px;
 }
 </style>
