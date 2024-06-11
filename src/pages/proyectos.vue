@@ -8,7 +8,7 @@
     :mousewheel="true"
     navigation>
         <swiper-slide class="">
-            <div class="relative">
+            <div class="relative" @click="verProyecto('CalaGranadellaJavea')">
                 <img src="/img/PROYECTOS/01CalaGranadellaJavea/Cala Granadella - A.jpg" alt="" class="img-slider-home kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Cala Granadella - Jávea</p>
@@ -17,7 +17,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('CuestaSanAntonioJavea')">
                 <img src="/img/PROYECTOS/02CuestaSanAntonioJavea/CuestaSanAntonio-A.jpg" alt="" class="img-slider-home kenburns-bottom">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Cuesta de San Antonio - Jávea</p>
@@ -26,7 +26,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('CasaCaracolJavea')">
                 <img src="/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-A.jpg" alt="" class="img-slider-home kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Casa Caracol - Jávea</p>
@@ -35,7 +35,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('EsCanarIbiza')">
                 <img src="/img/PROYECTOS/04EsCanarIbiza/EsCanar-01.jpg" alt="" class="img-slider-home kenburns-top-left">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Es Canar - Ibiza</p>
@@ -44,7 +44,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('TossaletJavea')">
                 <img src="/img/PROYECTOS/05Tossalet/TossaletJavea-02.jpg" alt="" class="img-slider-home kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Tossalet - Jávea</p>
@@ -53,7 +53,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('MorellJavea')">
                 <img src="/img/PROYECTOS/06MorellJavea/MorellJavea-01.jpg" alt="" class="img-slider-home kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Morell - Jávea</p>
@@ -62,7 +62,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('Golf')">
                 <img src="/img/PROYECTOS/07CNGOLF/CNGolf-01.jpg" alt="" class="img-slider-home kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Centro Nacional de Golf - Madrid</p>
@@ -71,7 +71,16 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative">
+            <div class="relative" @click="verProyecto('Alzira')">
+                <img src="/img/PROYECTOS/08Alzira/Alzira-01.jpg" alt="" class="img-slider-home kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4">
+                    <p class="proyect-name">Alzira - Valencia</p>
+                    <p class="proyect-description">Jardín delicado en una vivienda unifamiliar muy cuidada</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative" @click="verProyecto('Piver')">
                 <img src="/img/PROYECTOS/08Alzira/Alzira-01.jpg" alt="" class="img-slider-home kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4">
                     <p class="proyect-name">Alzira - Valencia</p>
@@ -90,8 +99,16 @@ import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useRouter } from 'vue-router';
+
 
 const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel, Autoplay]
+
+const router = useRouter()
+
+function verProyecto(nombre) {
+	router.push({ name: 'proyectos.details.slider.v1', params: { nombre } })
+}
 </script>
 
 <style scoped>

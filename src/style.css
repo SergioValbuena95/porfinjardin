@@ -14,27 +14,44 @@
   font-weight: lighter;
   font-style: normal;
 }
-
-.Acumin-pro-wide{
-  font-family: 'Acumin-pro-wide';
-}
-.Acumin-pro-wide-extra-light{
-  font-family: 'Acumin-pro-wide-extra-light';
-}
+.hidden-scroll::-webkit-scrollbar { display: none; }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Acumin-pro-wide', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #000;
   background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --swiper-pagination-color: #fff !important;
+  --swiper-pagination-bullet-inactive-color: #fff !important;
+}
+
+.Acumin-pro-wide{
+  font-family: 'Acumin-pro-wide';
+}
+.Acumin-pro-wide-extra-light{
+  font-family: 'Acumin-pro-wide-extra-light' !important;
+}
+
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+	opacity: 1 !important;
+}
+.swiper-pagination-bullet{
+	opacity: 0.6 !important;
+}
+
+.slider-process .swiper-slide:nth-child(3) .container-img{
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 a {
@@ -87,21 +104,12 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    /* background-color: #ffffff; */
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  
 }
 
 /**/
 .swiper-button-next, .swiper-button-prev{
-	color: white !important
+	color: #858585 !important
 }
 /**/
 /**/
@@ -118,4 +126,22 @@ button:focus-visible {
 /* */
 .slider-process .swiper-pagination-bullet-active{
   color: red !important
+}
+
+.hc-84{
+	height: calc(100dvh - 84px);
+}
+
+.img-hv-84{
+	height: calc(100dvh - 84px);
+}
+
+.wc-280px{
+	width: calc(100vw - 280px);
+}
+
+.d-middle-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
