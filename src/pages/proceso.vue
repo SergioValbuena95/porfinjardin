@@ -1,16 +1,28 @@
 <template>
-    <swiper :modules="modules"  :pagination="true" :slidesPerView="1" :spaceBetween="1" :mousewheel="true" navigation class="slider-process">
-        <swiper-slide v-for="(item, index) in procesos" :key="index">
-            <div class="flex relative">
-                <div class="info-text p-8 ">
-                    <p class="step-process Acumin-pro-wide mt-auto">{{ item.titulo }}</p>
-                    <p v-if="item.subtitulo" class="step-process Acumin-pro-wide">{{ item.subtitulo }}</p>
-                    <p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light">{{ item.descripcion }}</p>
-                </div>
-				<div class="container-img" :style="`background-image:url('${item.imagen}')`" />
-            </div>
-        </swiper-slide>
-    </swiper>
+	<div class="hidden lg:block">
+		<swiper :modules="modules"  :pagination="true" :slidesPerView="1" :spaceBetween="1" :mousewheel="true" navigation class="slider-process">
+			<swiper-slide v-for="(item, index) in procesos" :key="index">
+				<div class="flex relative">
+					<div class="info-text p-8 ">
+						<p class="step-process Acumin-pro-wide mt-auto">{{ item.titulo }}</p>
+						<p v-if="item.subtitulo" class="step-process Acumin-pro-wide">{{ item.subtitulo }}</p>
+						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light">{{ item.descripcion }}</p>
+					</div>
+					<div class="container-img" :style="`background-image:url('${item.imagen}')`" />
+				</div>
+			</swiper-slide>
+		</swiper>
+	</div>
+	<div class="lg:hidden">
+		<div v-for="item in procesos" :key="item.id">
+			<img :src="item.imagen" :alt="`fase ${item.id} del proceso`">
+			<div class="my-4 p-5 text-sm">
+				<p class="step-process Acumin-pro-wide mt-auto">{{ item.titulo }}</p>
+				<p v-if="item.subtitulo" class="step-process  Acumin-pro-wide mb-4">{{ item.subtitulo }}</p>
+				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light">{{ item.descripcion }}</p>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script setup>
@@ -32,22 +44,22 @@ const procesos = [
     },
     {
         id: 2,
-        titulo: 'FASE 2. ANTEPROYECTO: DISEÑO CONCEPTUAL Y RENDERS',
-        subtitulo: null,
+        titulo: 'FASE 2. ANTEPROYECTO:',
+        subtitulo: 'DISEÑO CONCEPTUAL Y RENDERS',
         descripcion: 'En esta fase se lleva a cabo un estudio en profundidad del espacio existente y se desarrolla una propuesta preliminar conceptual, donde se indican las zonas, usos y recorridos. Para una mejor comprensión preparamos una serie de imágenes realistas tipo render. Sobre esta idea se debaten las modificaciones o ajustes que sean necesarios, y así llegamos a la solución definitiva, acorde con las necesidades, estética y uso del jardín.',
         imagen: '/img/PROCESO/paisajismo02.jpg',
     },
     {
         id: 3,
-        titulo: 'FASE 3. PROYECTO: PLANOS',
-        subtitulo: null,
+        titulo: 'FASE 3. PROYECTO:',
+        subtitulo: 'PLANOS',
         descripcion: 'En esta fase desarrollamos los planos técnicos que serán la base para la construcción del jardín. Este juego de planos incluye, entre otros, plano de cotas y niveles, detalles técnicos, definición de especies, o acabado de pavimentos. Nos permite tomar mediciones para poder lanzar el proyecto a presupuestar.',
         imagen: '/img/PROCESO/paisajismo03-1plano.jpg',
     },
     {
         id: 4,
-        titulo: 'FASE 4. DIRECCIÓN DE OBRA: EJECUCIÓN',
-        subtitulo: null,
+        titulo: 'FASE 4. DIRECCIÓN DE OBRA:',
+        subtitulo: 'EJECUCIÓN',
         descripcion: 'El estudio cuenta con diferentes empresas constructoras de calidad para asegurar una buena ejecución, pero también podemos apoyarnos en los constructores existentes en la vivienda u otros de la elección del Cliente. Es muy importante nuestra participación en la parte de la Dirección de Obra para asegurar que el resultado final sea el esperado. Será Noemí Antón personalmente quien estará presente durante la distribución de la planta para un acabado acorde con los requisitos del Proyecto.',
         imagen: '/img/PROCESO/paisajismo04.jpg',
     },
@@ -76,11 +88,9 @@ const procesos = [
 }
 .step-process {
     color: #000000;
-    font-size: 12px;
 }
 .step-process-text{
     color: #7A7A7A !important;
-    font-size: 12px;
     font-weight: 300 !important;
 }
 </style>
