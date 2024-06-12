@@ -1,10 +1,20 @@
 <template>
     <swiper
     :modules="modules"
-    :slidesPerView="2"
-    :spaceBetween="1"
     :mousewheel="true"
     navigation
+	:breakpoints="{
+      '640': {
+        slidesPerView: 1,
+      },
+      '768': {
+        slidesPerView: 1,
+      },
+      '1024': {
+        slidesPerView: 2,
+        spaceBetween: 1,
+      },
+	}"
     >
         <swiper-slide>
             <div class="relative" @click="verProyecto('CalaGranadellaJavea')">

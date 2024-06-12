@@ -2,7 +2,7 @@
     <swiper :modules="modules"
     :slides-per-view="1"
     :rewind="true"
-    :autoplay="{ delay: 8000, disableOnInteraction: false, }"
+    :autoplay="{ delay: 80000, disableOnInteraction: false, }"
     :effect="'fade'"
     :scrollbar="{ draggable: true }"
     :mousewheel="true"
@@ -92,7 +92,6 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel
     }
 }
 
-/*  */
 .kenburns-bottom {
     -webkit-animation: kenburns-bottom 10s cubic-bezier(.19, 1.000, .22, 1.000) both;
     animation: kenburns-bottom 10s cubic-bezier(.19, 1.000, .22, 1.000) both
@@ -170,6 +169,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel
 .img-slider-home {
     height: calc(100dvh - 84px);
     width: 100dvw;
+	object-fit: cover;
 }
 .proyect-name{
     /* background-color: #0000009c; */

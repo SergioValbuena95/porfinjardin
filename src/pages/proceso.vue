@@ -3,9 +3,9 @@
 		<swiper :modules="modules"  :pagination="true" :slidesPerView="1" :spaceBetween="1" :mousewheel="true" navigation class="slider-process">
 			<swiper-slide v-for="(item, index) in procesos" :key="index">
 				<div class="flex relative">
-					<div class="info-text p-8 ">
+					<div class="info-text p-8 text-xs">
 						<p class="step-process Acumin-pro-wide mt-auto">{{ item.titulo }}</p>
-						<p v-if="item.subtitulo" class="step-process Acumin-pro-wide">{{ item.subtitulo }}</p>
+						<p v-if="item.subtitulo" class="step-process Acumin-pro-wide mb-4">{{ item.subtitulo }}</p>
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light">{{ item.descripcion }}</p>
 					</div>
 					<div class="container-img" :style="`background-image:url('${item.imagen}')`" />
