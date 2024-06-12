@@ -11,12 +11,12 @@
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Actualmente vivo en Jávea, un pueblo marinero a orillas del Mediterráneo y he formado el Estudio Por Fin Jardín, desde donde proyectamos y desarrollamos proyectos de paisajismo, principalmente en Jávea, Ibiza, Madrid, Valencia, y también en cualquier provincia de España, hemos trabajado en Ávila, Salamanca, Hamburgo o Ginebra.</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Puedes utilizar mi Estudio, mi trayectoria, y mi experiencia para ayudarte a conseguir tu jardín soñado. </p>
 			</div>
-			<img src="/img/ABOUT/noemiAnton.jpg" alt="" class="img-bio kenburns-top">
+			<img src="/img/ABOUT/noemiAnton.jpg" alt="Noemi Anton" class="img-bio kenburns-top">
 		</div>
 	</div>
 	<div class="lg:hidden">
 		<div class="flex flex-col relative">
-			<img src="/img/ABOUT/noemiAnton.jpg" alt="" class="">
+			<img src="/img/ABOUT/noemiAnton.jpg" alt="Noemi Anton">
 			<div class="flex flex-col p-8 overflow-auto">
 				<p class="step-process Acumin-pro-wide mb-3">Bio</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Estudié en la Escuela Superior de Ingenieros Agrónomos de Madrid y mi Proyecto Fin de Carrera fue un Invernadero de Orquídeas calificado con Sobresaliente.</p>

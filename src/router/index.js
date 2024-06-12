@@ -32,13 +32,13 @@ const routes = [
                 name: 'proyectos.second',
                 component: Proyectos2,
             },
+            // {
+            //     path: '/proyectos/:nombre',
+            //     name: 'proyectos.details',
+            //     component: ProyectosVer,
+            // },
             {
                 path: '/proyectos/:nombre',
-                name: 'proyectos.details',
-                component: ProyectosVer,
-            },
-            {
-                path: '/proyectos/:nombre/dinamicos',
                 name: 'proyectos.details.slider.v1',
                 component: ProyectosVerSlider1,
             },
