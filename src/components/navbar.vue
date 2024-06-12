@@ -2,7 +2,9 @@
 	<header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 min-h-[84px]">
 		<div class="flex items-center justify-between px-4 py-3 sm:p-0">
 		<div>
-			<img class="h-8" src="/img/noemiAntonrecortado.png" alt="Workcation">
+			<router-link :to="{ name: 'home' }">
+				<img class="h-8" src="/img/noemiAntonrecortado.png" alt="Noemi anton logo">
+			</router-link>
 		</div>
 		<div class="sm:hidden">
 			<button @click="isOpen = !isOpen" type="button" class="block text-gray-500 hover:text-black focus:text-black focus:outline-none">

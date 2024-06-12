@@ -2,7 +2,7 @@
     <swiper :modules="modules"
     :slides-per-view="1"
     :rewind="true"
-    :autoplay="{ delay: 80000, disableOnInteraction: false, }"
+    :autoplay="{ delay: 8000, disableOnInteraction: false, }"
     :effect="'fade'"
     :scrollbar="{ draggable: true }"
     :mousewheel="true"
