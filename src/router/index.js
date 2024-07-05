@@ -24,11 +24,6 @@ const routes = [
             },
             {
                 path: '/proyectos',
-                name: 'proyectos',
-                component: Proyectos,
-            },
-            {
-                path: '/proyectos2',
                 name: 'proyectos.second',
                 component: Proyectos2,
             },
