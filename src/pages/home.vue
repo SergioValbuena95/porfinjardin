@@ -9,35 +9,35 @@
     navigation>
         <swiper-slide class="">
             <div class="relative">
-                <img src="/img/HOME/HOME 01 2560x1400.jpg" alt="Vista - Cala Granadella - Jávea" class="img-slider-home kenburns-top">
-                <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
-                    <p class="Acumin-pro-wide">Cala Granadella - Jávea</p>
-                </div>
+                <img src="/img/HOME/HOME 01 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
             </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 02D 2560x1400.jpg" alt="Vista - Tossalet - Jávea" class="img-slider-home kenburns-top-left">
-            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
-                <p class="Acumin-pro-wide">Tossalet - Jávea</p>
-            </div>
+            <img src="/img/HOME/HOME 02D 2560x1400.jpg" alt="" class="img-slider-home kenburns-top-left">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 03 2560X1400.png" alt="Vista - Nombre del proyecto" class="img-slider-home kenburns-top">
-            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
-                <p class="Acumin-pro-wide">Nombre del proyecto</p>
-            </div>
+            <img src="/img/HOME/HOME 03 2560X1400.png" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 03b 2560X1400.jpg" alt="Vista - Federación Nacional de Golf" class="img-slider-home kenburns-top-left">
-            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
-                <p class="Acumin-pro-wide">Federación Nacional de Golf</p>
-            </div>
+            <img src="/img/HOME/HOME 03b 2560X1400.jpg" alt="" class="img-slider-home kenburns-top-left">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 04 2560X1400 ALTA.jpg" alt="Villa Forada - Ibiza" class="img-slider-home kenburns-top">
-            <div class="proyect-name absolute bottom-0 px-4 py-4 font-normal">
-                <p>Villa Forada - Ibiza</p>
-            </div>
+            <img src="/img/HOME/HOME 04 2560X1400 ALTA.jpg" alt="" class="img-slider-home kenburns-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/img/HOME/HOME 05 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/img/HOME/HOME 06 2560X1400.jpg" alt="" class="img-slider-home kenburns-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/img/HOME/HOME 08 2560X1400.jpg" alt="" class="img-slider-home kenburns-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/img/HOME/HOME 09 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/img/HOME/HOME 10 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
     </swiper>
 </template>
@@ -55,6 +55,7 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel
 </script>
 
 <style scoped>
+
 .kenburns-top {
     -webkit-animation: kenburns-top 10s ease-out infinite both;
     animation: kenburns-top 10s ease-out infinite both

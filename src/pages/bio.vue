@@ -2,7 +2,7 @@
 	<div class="hidden lg:block">
 		<div class="flex relative">
 			<div class="info-bio p-8 overflow-auto">
-				<p class="step-process Acumin-pro-wide mb-3">Bio</p>
+				<p class="step-process Acumin-pro-wide mb-20">Bio</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Estudié en la Escuela Superior de Ingenieros Agrónomos de Madrid y mi Proyecto Fin de Carrera fue un Invernadero de Orquídeas calificado con Sobresaliente.</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Tengo un Máster en Paisajismo por la Escuela Técnica Superior de Ingenieros Agrómomos y la Escuela Técnica Superior de Arquitectura de Madrid y una experiencia de más de 20 años en paisajismo en España y fuera.</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Mientras acababa mi carrera trabajé como becaria en el Departamento de Producción Vegetal de la Escuela de Agrónomos durante cuatro años. Allí aprendí muchas cosas, la principal de ellas el significado de la palabra compañerismo. También a escribir con rigurosidad científica, a conocer el trabajo de campo y pasar por todo el espectro agrario: desde ayudante de campo hasta responsable como Ingeniera Superior en Proyectos Europeos, en temas relacionados con semillas, cultivos, heladas y fertilización. Fue una etapa preciosa que recuerdo con mucho cariño.</p>
@@ -18,7 +18,7 @@
 		<div class="flex flex-col relative">
 			<img src="/img/ABOUT/noemiAnton.jpg" alt="Noemi Anton">
 			<div class="flex flex-col p-8 overflow-auto">
-				<p class="step-process Acumin-pro-wide mb-3">Bio</p>
+				<p class="step-process Acumin-pro-wide mb-10">Bio</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Estudié en la Escuela Superior de Ingenieros Agrónomos de Madrid y mi Proyecto Fin de Carrera fue un Invernadero de Orquídeas calificado con Sobresaliente.</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Tengo un Máster en Paisajismo por la Escuela Técnica Superior de Ingenieros Agrómomos y la Escuela Técnica Superior de Arquitectura de Madrid y una experiencia de más de 20 años en paisajismo en España y fuera.</p>
 				<p class="step-process-text Acumin-pro-wide Acumin-pro-wide mb-3">Mientras acababa mi carrera trabajé como becaria en el Departamento de Producción Vegetal de la Escuela de Agrónomos durante cuatro años. Allí aprendí muchas cosas, la principal de ellas el significado de la palabra compañerismo. También a escribir con rigurosidad científica, a conocer el trabajo de campo y pasar por todo el espectro agrario: desde ayudante de campo hasta responsable como Ingeniera Superior en Proyectos Europeos, en temas relacionados con semillas, cultivos, heladas y fertilización. Fue una etapa preciosa que recuerdo con mucho cariño.</p>
@@ -30,7 +30,6 @@
 		</div>
 	</div>
 </template>
-
 <script setup>
 
 </script>

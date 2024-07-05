@@ -9,12 +9,28 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Neutraface-text-light';
+  src: url('../src/assets/fonts/Neutraface-text-light') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Acumin-pro-wide-extra-light';
   src: url('../src/assets/fonts/Acumin-Pro-Wide-ExtraLight.woff.ttf') format('truetype');
   font-weight: lighter;
   font-style: normal;
 }
 .hidden-scroll::-webkit-scrollbar { display: none; }
+
+.Acumin-pro-wide{
+  font-family: 'Acumin-pro-wide';
+}
+.Acumin-pro-wide-extra-light{
+  font-family: 'Acumin-pro-wide-extra-light';
+}
+.Neutraface-light{
+  font-family: 'Neutraface-text-light';
+}
 
 :root {
   font-family: 'Acumin-pro-wide', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -31,27 +47,23 @@
   -moz-osx-font-smoothing: grayscale;
   --swiper-pagination-color: #fff !important;
   --swiper-pagination-bullet-inactive-color: #fff !important;
+  --swiper-navigation-size: 35px !important;
 }
-
-.Acumin-pro-wide{
-  font-family: 'Acumin-pro-wide';
-}
-.Acumin-pro-wide-extra-light{
-  font-family: 'Acumin-pro-wide-extra-light' !important;
-}
-
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active{
 	opacity: 1 !important;
 }
 .swiper-pagination-bullet{
-	opacity: 0.6 !important;
+  opacity: 0.6 !important;
+  border-radius: 0px !important;
+  height: 3px !important;
 }
 
 .slider-process .swiper-slide:nth-child(3) .container-img{
 	background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  --swiper-navigation-size: 35px !important;
 }
 
 a {
@@ -109,7 +121,7 @@ button:focus-visible {
 
 /**/
 .swiper-button-next, .swiper-button-prev{
-	color: #858585 !important
+	color: #fff !important
 }
 /**/
 /**/
@@ -141,7 +153,7 @@ button:focus-visible {
 }
 
 .d-middle-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

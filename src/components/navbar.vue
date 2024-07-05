@@ -15,13 +15,16 @@
 			</button>
 		</div>
 		</div>
-		<nav :class="isOpen ? 'block' : 'hidden'" class="px-7 pt-2 pb-4 sm:flex sm:p-0 gap-x-12 gap-y-4 lg:text-[11px]">
-			<router-link :to="{ name: 'proyectos' }" class="Acumin-pro-wide block">PROYECTOS</router-link>
-            <router-link :to="{ name: 'proyectos.second' }" class="Acumin-pro-wide block">PROYECTOS 2</router-link>
-            <router-link to="/proceso" class="Acumin-pro-wide block">PROCESO</router-link>
-            <router-link to="/info-about" class="Acumin-pro-wide block">ABOUT</router-link>
-            <router-link to="/info-bio" class="Acumin-pro-wide block">BIO</router-link>
-            <router-link to="/contacto" class="Acumin-pro-wide block">CONTACO</router-link>
+		<nav :class="isOpen ? 'block' : 'hidden'" class="px-7 pt-2 pb-4 sm:flex sm:p-0 gap-x-12 gap-y-4 lg:text-[11px] mt-2">
+			<router-link :to="{ name: 'proyectos.second' }" class="Acumin-pro-wide block">PROYECTOS</router-link>
+            <router-link to="/proceso" class="d-middle-center Acumin-pro-wide block">PROCESO</router-link>
+            <router-link to="/proceso" class="d-middle-center Acumin-pro-wide block">INFO</router-link>
+            <router-link to="/info-about" class="d-middle-center Acumin-pro-wide block">ABOUT</router-link>
+            <router-link to="/info-bio" class="d-middle-center Acumin-pro-wide block">BIO</router-link>
+            <router-link to="/contacto" class="d-middle-center Acumin-pro-wide block">CONTACO</router-link>
+            <a href="https://www.instagram.com/noemiantonpaisajismo/" target="_blank">
+                <img src="/img/instagram.svg" alt="" width="22">
+            </a>
 		</nav>
 	</header>
 </template>
@@ -38,7 +41,7 @@ const isOpen = ref(false)
     background-color: #fff;
 }
 .navbar a {
-    font-size: 11px;
+    font-size: 12px;
 }
 .navbar a:hover {
     color: #000000
