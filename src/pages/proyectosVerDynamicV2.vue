@@ -106,7 +106,7 @@ const projectsList = ref([
 			'/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-C.jpg',
 			'/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-D.jpg',
 			'/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-E.jpg',
-			'/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-F.jpg',
+			'/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-F .jpg.jpg',
 			'/img/PROYECTOS/03CasaCaracolJavea/CasaCaracol-G.jpg',
 		],
     },
