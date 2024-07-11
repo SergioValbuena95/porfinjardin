@@ -10,6 +10,7 @@
 						<p class="step-process Acumin-pro-wide mt-auto mb-3">{{ item.titulo }}</p>
 						<p v-if="item.subtitulo" class="step-process-text Acumin-pro-wide-extra-light mb-4">{{ item.subtitulo }}</p>
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">{{ item.descripcion }}</p>
+						<p v-if="item.subdescripcion" class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">{{ item.subdescripcion }}</p>
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light">{{ item.estado }}</p>
 					</div>
 					<div class="wc-300px hc-84">
@@ -60,7 +61,7 @@ onBeforeMount(() => {
 const projectsList = ref([
     {
         id: 'CalaGranadellaJavea',
-        titulo: 'Cala Granadella - Jávea',
+        titulo: 'Cala Granadella · Jávea',
         subtitulo: 'Un jardín estrictamente mediterráneo de líneas limpias',
         descripcion: 'Vivienda unifamiliar en una sola planta en la zona de Granadella , en Jávea . El jardín busca respetar las líneas limpias de la arquitectura, integrando espacios y recorridos y contribuyendo a l a estética con un área estancial rodeada de una celosía de madera igual que la de la fachada. La selección de especies sigue la misma línea pulcra y austera, con masas continuas, toques de gramíneas y colores uniformes en la gama de los azules.',
         estado: 'Obra en construcción - Año 2024.',
@@ -77,7 +78,7 @@ const projectsList = ref([
     },
     {
         id: 'CuestaSanAntonioJavea',
-        titulo: 'Cuesta de San Antonio - Jávea',
+        titulo: 'Cuesta de San Antonio · Jávea',
         subtitulo: 'Conectando espacios en varios desniveles.',
         descripcion: 'Una especial reforma de los arquitectos Nieto Sobejano en una vivienda en el Cabo de San Antonio, Jávea. El jardín se articula en diferentes espacios, respetando las vistas e integrando las diferentes áreas y desniveles con el entorno. La selección de especies se llevó a cabo teniendo en cuenta la cercanía del mar y el uso estacional de la vivienda por parte de los Propietarios.',
         estado: 'Obra terminada - Año 2018.',
@@ -94,8 +95,25 @@ const projectsList = ref([
 		],
     },
     {
+        id: 'CasaMalvaJavea',
+        titulo: 'Casa Malva. Jardí d ́Olivella· Jávea',
+        subtitulo: 'Jardín enclavado en la montaña, de estética naturalista, que busca integrarse en el entorno.',
+        descripcion: 'Nos apoyarnos sobre las curvas de nivel originales para configurar varias terrazas que permitan un recor rido por el jardín y la creación de varias zonas estanciales. En la entrada, enclavada entre los muros de la roca y de la fachada, surge un patio con un pequeño área estancial, acompañada de una lámina de agua y de ejemplares potentes.',
+        subdescripcion: 'La ecología y la rec uperación del espacio ha sido un valor remarcado por el Cliente en todo momento.',
+        estado: 'Obra en construcción - Año 2024.',
+        imagen: '/img/PROYECTOS/3JardinOlivellaJavea/01MalvaVisualFrontal.jpg',
+		imagenes: [
+			'/img/PROYECTOS/3JardinOlivellaJavea/01MalvaVisualFrontal.jpg',
+			'/img/PROYECTOS/3JardinOlivellaJavea/02MalvaVisualFrontal-EstancialLectura.jpg',
+			'/img/PROYECTOS/3JardinOlivellaJavea/03MalvaVisualFrontal-EstancialAgua.jpg',
+			'/img/PROYECTOS/3JardinOlivellaJavea/04MalvaVisualPerspectiva.jpg',
+			'/img/PROYECTOS/3JardinOlivellaJavea/05MalvaVisualPatio.jpg',
+			'/img/PROYECTOS/3JardinOlivellaJavea/06MalvaVisualNoche.jpg',
+		],
+    },
+    {
         id: 'CasaCaracolJavea',
-        titulo: 'Casa Caracol - Jávea',
+        titulo: 'Casa Caracol · Jávea',
         subtitulo: 'Jardín sostenible en una vivienda singular de Jávea.',
         descripcion: 'Jardín de nueva construcción en una vivienda singular de Jávea, del arquitecto Manuel Jorge, caracterizado por diseños que se mimetizan con el entorno. El jardín se ha diseñado teniendo en cuenta el espacio singular en el que se encuentra, rodeado de pinos, y pretende integrarse con la vivienda por medio de espacios austeros y vegetación pulcra y sencilla. Se han creado diferentes espacios exteriores que permiten ampliar la superficie propia del espacio interior, de modo que la casa se abre hacia afuera. La ecología, sostenibilidad, empleo racional del agua y respeto al entorno están presentes de forma intensa en este proyecto.',
         estado: 'Obra en construcción - Año 2024.',
@@ -112,7 +130,7 @@ const projectsList = ref([
     },
     {
         id: 'EsCanarIbiza',
-        titulo: 'Es Canar - Ibiza',
+        titulo: 'Es Canar · Ibiza',
         subtitulo: 'Jardín mediterráneo con una amplia selección de especies.',
         descripcion: 'Reforma de un jardín muy amplio en una zona exclusiva de Ibiza. Se han conformado diferentes áreas estanciales como un comedor exterior o una zona de lectura, que se conectan mediante el trazado de diferentes caminos y sendas, que permiten recorrer el jardín inmerso en una selección de especies mediterráneas, buscan do potenciar el ecosistema preexistente.',
         estado: 'Obra en construcción - Año 2023.',
@@ -128,7 +146,7 @@ const projectsList = ref([
     },
     {
         id: 'TossaletJavea',
-        titulo: 'Tossalet - Jávea',
+        titulo: 'Tossalet · Jávea',
         subtitulo: 'Jardín de una segunda residencia en Jávea.',
         descripcion: 'Un jardín amplio que se organiza en dos espacios, una zona más delicada alrededor de la vivienda y la piscina, y otra más silvestre, con un campo de naranjos y un huerto rodeando la pista de pádel. La integración de las líneas de la arquitectura con las del jardín fue una de las premisas de este proyecto.',
         estado: 'Obra terminada - Año 2019.',
@@ -144,7 +162,7 @@ const projectsList = ref([
     },
     {
         id: 'MorellJavea',
-        titulo: 'Morell - Jávea',
+        titulo: 'Morell · Jávea',
         subtitulo: 'Jardín delicado en una vivienda unifamiliar muy cuidada.',
         descripcion: 'Jardín en una zona montañosa de Jávea, sustrato de piedra, varias zonas umbrías y grandes diferencias de altura. Se organiza en cuatro zonas que permiten disfrutar del jardín según las estaciones y las horas del día. Una zona norte muy agradable con vistas al mar, una zona sur soleada donde se coloca una fuente apoyada en la roca existente, la zona este con una pérgola acompañada de parras y por último la zona oeste donde se sitúa la piscina y el desayunador.',
         estado: 'Obra terminada - Año 2017.',
@@ -161,7 +179,7 @@ const projectsList = ref([
     },
     {
         id: 'Golf',
-        titulo: 'Centro Nacional del Golf - Madrid',
+        titulo: 'Centro Nacional del Golf · Madrid',
         subtitulo: 'Superficie multifuncional.',
         descripcion: 'Creación de un espacio de uso público multifuncional dentro de un complejo deportivo representativo en Madrid capital. El uso principal de este espacio es el de restaurante, a la vez que es posible flexibilizar lo para diferentes eventos. El pavimento seleccionado es de tipo terrizo y se combina con cenefas de piedra natural, buscando una sensación campestre a la vez que elegante y amable. La ubicación de diferentes ejemplares de tilos aportan una cubierta potente que proyectará sombra en verano y permitirá el paso del sol en invierno.',
         estado: 'Obra pendiente de construcción.',
@@ -176,7 +194,7 @@ const projectsList = ref([
     },
     {
         id: 'Alzira',
-        titulo: 'Alzira - Valencia',
+        titulo: 'Alzira · Valencia',
         subtitulo: 'Jardín delicado en una vivienda unifamiliar muy cuidada.',
         descripcion: 'Pequeño jardín de una vivienda cuyo interiorismo está cuidado al máximo detalle en Alzira, Valencia. Las líneas orgánicas , en combinación con la arquitectura y los materiales del interior, devuelven un aspecto singular, que combina con las piedras escultóricas y la vegetación cuidadosamente seleccionada.',
         estado: 'Obra terminada - Año 2023.',
@@ -190,7 +208,7 @@ const projectsList = ref([
     },
     {
         id: 'Piver',
-        titulo: 'Piver - Jávea',
+        titulo: 'Piver · Jávea',
         subtitulo: 'Jardín rigurosamente mediterráneo en una zona de reminiscencias agrícolas.',
         descripcion: 'Reforma de un jardín de carácter natural en una vivienda unifamiliar reformada en Jávea. La propiedad comprende diferentes parcelas unidas y se ha pretendido cohesionarlas para que el jardín sea un todo, aunque respetando los diferentes espacios.',
         estado: 'Obra en construcción - Año 2024.',
