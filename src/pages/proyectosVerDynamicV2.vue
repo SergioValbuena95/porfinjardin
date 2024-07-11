@@ -100,7 +100,7 @@ const projectsList = ref([
         subtitulo: 'Jardín enclavado en la montaña, de estética naturalista, que busca integrarse en el entorno.',
         descripcion: 'Nos apoyarnos sobre las curvas de nivel originales para configurar varias terrazas que permitan un recor rido por el jardín y la creación de varias zonas estanciales. En la entrada, enclavada entre los muros de la roca y de la fachada, surge un patio con un pequeño área estancial, acompañada de una lámina de agua y de ejemplares potentes.',
         subdescripcion: 'La ecología y la rec uperación del espacio ha sido un valor remarcado por el Cliente en todo momento.',
-        estado: 'Obra en construcción - Año 2024.',
+        estado: 'Obra pendiente de construcción.',
         imagen: '/img/PROYECTOS/3JardinOlivellaJavea/01MalvaVisualFrontal.jpg',
 		imagenes: [
 			'/img/PROYECTOS/3JardinOlivellaJavea/01MalvaVisualFrontal.jpg',
@@ -190,6 +190,22 @@ const projectsList = ref([
 			'/img/PROYECTOS/07CNGOLF/CNGolf-03.jpg',
 			'/img/PROYECTOS/07CNGOLF/CNGolf-04.jpg',
 			'/img/PROYECTOS/07CNGOLF/CNGolf-05.png',
+		],
+    },
+    {
+        id: 'AmetllaDelValles',
+        titulo: `L´Ametlla del Vallès · Barcelona`,
+        subtitulo: null ,
+        descripcion: 'Vivienda de nueva construcción con un toque clásico dentro de una parcela con ligeras pendientes que se aprovechan para crear diferentes niveles que devuelven ambientes distintos. La vegetación, mediterránea, acompaña suavemente los estanciales y recorridos. La simplicidad y el cuidado en e l trazado del espacio es la clave de este proyecto.',
+        estado: 'Obra pendiente de construcción.',
+        imagen: '/img/PROYECTOS/08Alzira/Alzira-01.jpg',
+		imagenes: [
+			'/img/PROYECTOS/08LAmetllaDelValles/03LAmetllaDelValles-Piscina01.jpg',
+			'/img/PROYECTOS/08LAmetllaDelValles/02LAmetllaDelValles-Piscina02.jpg',
+			'/img/PROYECTOS/08LAmetllaDelValles/01LAmetllaDelValles-Piscina03.jpg',
+			'/img/PROYECTOS/08LAmetllaDelValles/04LAmetllaDelValles-Posterior01.jpg',
+			'/img/PROYECTOS/08LAmetllaDelValles/05LAmetllaDelValles-Posterior.jpg',
+			'/img/PROYECTOS/08LAmetllaDelValles/06LAmetllaDelValles-Posterior.jpg',
 		],
     },
     {

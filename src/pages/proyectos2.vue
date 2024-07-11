@@ -72,8 +72,17 @@
             <div class="relative" @click="verProyecto('Golf')">
                 <img src="/img/PROYECTOS/07CNGOLF/CNGolf-01.jpg" alt="" class="img-slider-projects kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4 Neutraface-light">
-                    <p class="proyect-name">Centro Nacional de Golf - Madrid</p>
+                    <p class="proyect-name">Centro Nacional de Golf · Madrid</p>
                     <p class="proyect-description">Superficie multifuncional</p>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>
+            <div class="relative" @click="verProyecto('AmetllaDelValles')">
+                <img src="/img/PROYECTOS/08LAmetllaDelValles/03LAmetllaDelValles-Piscina01.jpg" alt="" class="img-slider-projects kenburns-top">
+                <div class="proyect-info absolute bottom-0 px-4 py-4 Neutraface-light">
+                    <p class="proyect-name">L ́Ametlla del Vallès · Barcelona</p>
+                    <p class="proyect-description">La vegetación, mediterránea, acompaña suavemente los estanciales y recorridos.</p>
                 </div>
             </div>
         </swiper-slide>
