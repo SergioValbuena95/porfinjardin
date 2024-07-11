@@ -23,7 +23,7 @@
 						navigation
 						class="h-full">
 							<swiper-slide v-for="(img, idx) in item.imagenes" :key="idx">
-								<img :src="img" :alt="`Render ${idx+1} de ${item.titulo}`" class="w-100 h-full">
+								<img :src="img" :alt="`Render ${idx+1} de ${item.titulo}`" class="w-full h-full">
 							</swiper-slide>
 						</swiper>
 					</div>
