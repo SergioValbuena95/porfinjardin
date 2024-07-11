@@ -151,6 +151,9 @@ button:focus-visible {
 .wc-280px{
 	width: calc(100vw - 280px);
 }
+.wc-300px{
+	width: calc(100vw - 300px);
+}
 
 .d-middle-center {
   display: flex;

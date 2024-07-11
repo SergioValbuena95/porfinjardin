@@ -12,7 +12,7 @@
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">{{ item.descripcion }}</p>
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light">{{ item.estado }}</p>
 					</div>
-					<div class="wc-280px hc-84">
+					<div class="wc-300px hc-84">
 						<swiper
 						:modules="modules"
 						:autoplay="{ delay: 6000, disableOnInteraction: true }"
@@ -221,8 +221,8 @@ const projectsList = ref([
 .info-text{
     display: flex;
     flex-direction: column;
-    min-width: 280px;
-    max-width: 280px;
+    min-width: 300px;
+    max-width: 300px;
     height: calc(100dvh - 84px);
 }
 .step-process {
