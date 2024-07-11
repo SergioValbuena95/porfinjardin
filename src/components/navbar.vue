@@ -3,7 +3,7 @@
 		<div class="flex items-center justify-between px-4 py-3 sm:p-0">
 		<div>
 			<router-link :to="{ name: 'home' }">
-				<img class="h-8" src="/img/noemiAntonrecortado.png" alt="Noemi anton logo">
+				<img class="h-14" src="/img/logoNoemiAntonBold.png" alt="Noemi anton logo">
 			</router-link>
 		</div>
 		<div class="sm:hidden">
