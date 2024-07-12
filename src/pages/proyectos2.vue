@@ -51,7 +51,7 @@
             </div>
         </swiper-slide>
         <swiper-slide>
-            <div class="relative" @click="verProyecto('ssaletJavea')">
+            <div class="relative" @click="verProyecto('TossaletJavea')">
                 <img src="/img/PROYECTOS/05Tossalet/TossaletJavea-02.jpg" alt="" class="img-slider-projects kenburns-top">
                 <div class="proyect-info absolute bottom-0 px-4 py-4 Neutraface-light">
                     <p class="proyect-name">Tossalet · Jávea</p>
