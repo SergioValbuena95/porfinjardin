@@ -59,12 +59,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
   height: 3px !important;
 }
 
-.slider-process .swiper-slide:nth-child(3) .container-img{
+/* .slider-process .swiper-slide:nth-child(3) .container-img{
 	background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   --swiper-navigation-size: 35px !important;
-}
+} */
 
 a {
   font-weight: 500;
