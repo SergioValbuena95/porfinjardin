@@ -1,5 +1,5 @@
 <template>
-	<header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 min-h-[84px]">
+	<header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 min-h-[84px] lg:pe-8">
 		<div class="flex items-center justify-between px-4 py-3 sm:p-0">
 		<div>
 			<router-link :to="{ name: 'home' }">
@@ -16,14 +16,22 @@
 		</div>
 		</div>
 		<nav :class="isOpen ? 'block' : 'hidden'" class="px-7 pt-2 pb-4 sm:flex sm:p-0 gap-x-12 gap-y-4 lg:text-[11px] mt-2">
-			<router-link :to="{ name: 'proyectos.second' }" class="Acumin-pro-wide block">PROYECTOS</router-link>
+			<router-link :to="{ name: 'proyectos.second' }" class="d-middle-center Acumin-pro-wide block">PROYECTOS</router-link>
             <router-link to="/proceso" class="d-middle-center Acumin-pro-wide block">PROCESO</router-link>
-            <router-link to="/proceso" class="d-middle-center Acumin-pro-wide block">INFO</router-link>
-            <router-link to="/info-about" class="d-middle-center Acumin-pro-wide block">ABOUT</router-link>
-            <router-link to="/info-bio" class="d-middle-center Acumin-pro-wide block">BIO</router-link>
-            <router-link to="/contacto" class="d-middle-center Acumin-pro-wide block">CONTACO</router-link>
+			<div class="d-middle-center relative">
+				<router-link to="" class="d-middle-center Acumin-pro-wide block" @click="showSubMenu = !showSubMenu">
+					INFO
+					<svg v-if="!showSubMenu" class="absolute right-[-18px] w-[18px] bottom-[6px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+					<svg v-if="showSubMenu" class="absolute right-[-18px] w-[18px] bottom-[6px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-up</title><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" /></svg>
+				</router-link>
+				<div v-if="showSubMenu" class="absolute -left-4 top-8 z-10 ps-3 pe-6 flex flex-col gap-y-1 shadow-lg rounded bg-white">
+					<router-link to="/info-about" class="Acumin-pro-wide block" @click="showSubMenu = !showSubMenu">ABOUT</router-link>
+					<router-link to="/info-bio" class="Acumin-pro-wide block" @click="showSubMenu = !showSubMenu">BIO</router-link>
+				</div>
+			</div>
+            <router-link to="/contacto" class="d-middle-center Acumin-pro-wide block">CONTACTO</router-link>
             <a href="https://www.instagram.com/noemiantonpaisajismo/" target="_blank">
-                <img src="/img/instagram.svg" alt="" width="22">
+                <img src="/img/instagram.svg" alt="" width="22" style="margin-bottom: 6px;">
             </a>
 		</nav>
 	</header>
@@ -33,6 +41,7 @@
 import { ref } from 'vue';
 
 const isOpen = ref(false)
+const showSubMenu = ref(false)
 </script>
 
 <style scoped>
