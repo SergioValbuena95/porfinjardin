@@ -9,35 +9,35 @@
     navigation>
         <swiper-slide class="">
             <div class="relative">
-                <img src="/img/HOME/HOME 01 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
+                <img src="/img/HOMENEW/HOME 01.webp" alt="" class="img-slider-home kenburns-top">
             </div>
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 02D 2560x1400.jpg" alt="" class="img-slider-home kenburns-top-left">
+            <img src="/img/HOMENEW/HOME 02c.webp" alt="" class="img-slider-home kenburns-top-left">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 03 2560X1400.png" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 03.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 03b 2560X1400.jpg" alt="" class="img-slider-home kenburns-top-left">
+            <img src="/img/HOMENEW/HOME 03b.webp" alt="" class="img-slider-home kenburns-top-left">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 04 2560X1400 ALTA.jpg" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 04.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 05 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 05.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 06 2560X1400.jpg" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 06.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 08 2560X1400.jpg" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 08.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 09 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 09.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOME/HOME 10 2560x1400.jpg" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 10.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
     </swiper>
 </template>
