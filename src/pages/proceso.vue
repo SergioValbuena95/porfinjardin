@@ -10,7 +10,7 @@
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Después , se inicia la redacción de proyecto , que comprende el juego de planos y la memoria , y con el que se podrá calcular el presupuesto definitivo del jardín. Como última fase tenemos la construcción, en la que participaré de forma activa para asegurar que el resultado de la construcción es el esperado.</p>
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Y a partir de aquí es el Propietario el encargado de cuidar y disfrutar de su jardín .</p>
 					</div>
-					<div class="container-img" :style="`background-image:url('/img/PROCESO/paisajismoInit.jpg')`" />
+					<div class="container-img" :style="`background-image:url('/img/PROCESO/paisajismoInit.webp')`" />
 				</div>
 			</swiper-slide>
 			<swiper-slide v-for="(item, index) in procesos" :key="index">
@@ -27,7 +27,7 @@
 	</div>
 	<div class="lg:hidden">
         <div>
-			<img src="/img/PROCESO/paisajismoInit.jpg" :alt="`fase inicial del proceso`">
+			<img src="/img/PROCESO/paisajismoInit.webp" :alt="`fase inicial del proceso`">
 			<div class="my-4 p-5 text-sm">
 				<p class="step-process Acumin-pro-wide mt-auto mb-3">{{ 'Proceso' }}</p>
                 <p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">El diseño de un jardín es un proceso que llevo a cabo de manera totalmente personal, manteniendo con el Cliente una comunicación y un vínculo muy cercanos</p>
@@ -62,28 +62,28 @@ const procesos = [
         titulo: 'Fase 1. Inicio del proyecto:',
         subtitulo: 'Necesidades, ideales',
         descripcion: 'El proyecto comienza con una reunión con el Cliente, donde el objetivo es obtener información acerca de sus necesidades, forma de vida, deseos, y de las sensaciones que le gustaría encontrar en su jardín. Sobre el terreno se lleva a cabo un estudio básico sobre el espacio existente, lo que permitirá preparar una propuesta de honorarios donde se detalla el alcance del proyecto, las fases y los tiempos.',
-        imagen: '/img/PROCESO/paisajismo01.jpg',
+        imagen: '/img/PROCESO/paisajismo01.webp',
     },
     {
         id: 2,
         titulo: 'Fase 2. Anteproyecto:',
         subtitulo: 'Diseño conceptual y renders',
         descripcion: 'En esta fase se lleva a cabo un estudio en profundidad del espacio existente y se desarrolla una propuesta conceptual, donde se indica la distribución general del jardín, con la s diferentes zonas, usos y recorridos. Para una mejor comprensión se preparan una serie de imágenes realistas tipo render. Sobre ellas se debaten las modificaciones o ajustes que sean necesarios, y así llegamos a la solución definitiva , acorde con las necesidades, estética y uso del jardín.',
-        imagen: '/img/PROCESO/paisajismo02.jpg',
+        imagen: '/img/PROCESO/paisajismo02.webp',
     },
     {
         id: 3,
         titulo: 'Fase 3. Proyecto:',
         subtitulo: 'Planos',
         descripcion: 'En esta fase se desarrollan los planos técnicos que serán la base para la construcción del jardín. Este juego de planos incluye, entre otros, plano de cotas y niveles, pavimentos, detalles técnicos, definición de especies arbóreas, arbustivas y herbáceas, o iluminación. A partir de los planos se toman mediciones de todas las partidas de obra con el objetivo de presupuestar la construcción del jardín.',
-        imagen: '/img/PROCESO/paisajismo03-nueva.jpg',
+        imagen: '/img/PROCESO/paisajismo03-nueva.webp',
     },
     {
         id: 4,
         titulo: 'Fase 4. Dirección de obra:',
         subtitulo: 'Ejecución',
         descripcion: 'Cuento con diferentes empresas constructoras de calidad para asegurar una buena ejecución, pero también puedo apoyarme en los constructores existentes en la vivienda u otros de la elección del Cliente. Es muy importante mi participación en la parte de la Dirección de Obra para asegurar que el resultado final sea el esperado siendo siempre yo personalmente quien estaré presente durante la plantación de árboles y la distribución de la planta para un acabado acorde con los requisitos del Proyecto.',
-        imagen: '/img/PROCESO/paisajismo04.jpg',
+        imagen: '/img/PROCESO/paisajismo04.webp',
     },
 ]
 </script>
