@@ -49,6 +49,9 @@
   --swiper-pagination-bullet-inactive-color: #fff !important;
   --swiper-navigation-size: 35px !important;
 }
+input, textarea{
+  background-color: white;
+}
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active{
 	opacity: 1 !important;
@@ -98,9 +101,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
