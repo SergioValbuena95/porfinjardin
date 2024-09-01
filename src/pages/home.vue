@@ -16,7 +16,7 @@
             <img src="/img/HOMENEW/HOME 02c.webp" alt="" class="img-slider-home kenburns-top-left">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOMENEW/HOME 03.webp" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 03.webp" alt="" class="img-slider-home kenburns-top-reverse">
         </swiper-slide>
         <swiper-slide>
             <img src="/img/HOMENEW/HOME 03b.webp" alt="" class="img-slider-home kenburns-top-left">
@@ -28,7 +28,7 @@
             <img src="/img/HOMENEW/HOME 05.webp" alt="" class="img-slider-home kenburns-top">
         </swiper-slide>
         <swiper-slide>
-            <img src="/img/HOMENEW/HOME 06.webp" alt="" class="img-slider-home kenburns-top">
+            <img src="/img/HOMENEW/HOME 06.webp" alt="" class="img-slider-home kenburns-top-left">
         </swiper-slide>
         <swiper-slide>
             <img src="/img/HOMENEW/HOME 08.webp" alt="" class="img-slider-home kenburns-top">
@@ -166,6 +166,12 @@ const modules = [Navigation, Pagination, Scrollbar, A11y, EffectFade, Mousewheel
         transform-origin: top left
     }
 }
+
+.kenburns-top-reverse{-webkit-animation:kenburns-top-reverse 5s ease-out reverse both;animation:kenburns-top-reverse 5s ease-out reverse both}
+@-webkit-keyframes kenburns-top-reverse{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}@keyframes kenburns-top-reverse{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}
+
+.kenburns-top-eib{-webkit-animation:kenburns-top-eib 5s cubic-bezier(.6,-.28,.735,.045) both;animation:kenburns-top-eib 5s cubic-bezier(.6,-.28,.735,.045) both}
+@-webkit-keyframes kenburns-top-eib{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}@keyframes kenburns-top-eib{0%{-webkit-transform:scale(1) translateY(0);transform:scale(1) translateY(0);-webkit-transform-origin:50% 16%;transform-origin:50% 16%}100%{-webkit-transform:scale(1.25) translateY(-15px);transform:scale(1.25) translateY(-15px);-webkit-transform-origin:top;transform-origin:top}}
 
 .img-slider-home {
     height: calc(100dvh - 84px);

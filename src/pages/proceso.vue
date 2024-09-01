@@ -6,9 +6,9 @@
 					<div class="info-text p-8 text-xs">
 						<p class="step-process Acumin-pro-wide mt-auto mb-3">{{ 'Proceso' }}</p>
 						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">El diseño de un jardín es un proceso que llevo a cabo de manera totalmente personal, manteniendo con el Cliente una comunicación y un vínculo muy cercanos</p>
-						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Empezamos con un primer contacto para conocernos , visitar el terreno y cambiar impresiones . Una vez encargado el diseño preparamos en el Estudio una propuesta conceptual a través de visuales tipo render que nos permiten discutir los espacios, ambientes y trazado . Sobre estas visuales comentamos los ajustes que sean necesarios de modo que alcanz amos la solución definitiva</p>
-						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Después , se inicia la redacción de proyecto , que comprende el juego de planos y la memoria , y con el que se podrá calcular el presupuesto definitivo del jardín. Como última fase tenemos la construcción, en la que participaré de forma activa para asegurar que el resultado de la construcción es el esperado.</p>
-						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Y a partir de aquí es el Propietario el encargado de cuidar y disfrutar de su jardín .</p>
+						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Empezamos con un primer contacto para conocernos, visitar el terreno y cambiar impresiones. Una vez encargado el diseño preparamos en el Estudio una propuesta conceptual a través de visuales tipo render que nos permiten discutir los espacios, ambientes y trazado. Sobre estas visuales comentamos los ajustes que sean necesarios de modo que alcanz amos la solución definitiva</p>
+						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Después, se inicia la redacción de proyecto, que comprende el juego de planos y la memoria, y con el que se podrá calcular el presupuesto definitivo del jardín. Como última fase tenemos la construcción, en la que participaré de forma activa para asegurar que el resultado de la construcción es el esperado.</p>
+						<p class="step-process-text Acumin-pro-wide Acumin-pro-wide-extra-light mb-2"> Y a partir de aquí es el Propietario el encargado de cuidar y disfrutar de su jardín.</p>
 					</div>
 					<div class="container-img" :style="`background-image:url('/img/PROCESO/paisajismoInit.webp')`" />
 				</div>
@@ -68,7 +68,7 @@ const procesos = [
         id: 2,
         titulo: 'Fase 2. Anteproyecto:',
         subtitulo: 'Diseño conceptual y renders',
-        descripcion: 'En esta fase se lleva a cabo un estudio en profundidad del espacio existente y se desarrolla una propuesta conceptual, donde se indica la distribución general del jardín, con la s diferentes zonas, usos y recorridos. Para una mejor comprensión se preparan una serie de imágenes realistas tipo render. Sobre ellas se debaten las modificaciones o ajustes que sean necesarios, y así llegamos a la solución definitiva , acorde con las necesidades, estética y uso del jardín.',
+        descripcion: 'En esta fase se lleva a cabo un estudio en profundidad del espacio existente y se desarrolla una propuesta conceptual, donde se indica la distribución general del jardín, con la s diferentes zonas, usos y recorridos. Para una mejor comprensión se preparan una serie de imágenes realistas tipo render. Sobre ellas se debaten las modificaciones o ajustes que sean necesarios, y así llegamos a la solución definitiva, acorde con las necesidades, estética y uso del jardín.',
         imagen: '/img/PROCESO/paisajismo02.webp',
     },
     {
@@ -76,7 +76,7 @@ const procesos = [
         titulo: 'Fase 3. Proyecto:',
         subtitulo: 'Planos',
         descripcion: 'En esta fase se desarrollan los planos técnicos que serán la base para la construcción del jardín. Este juego de planos incluye, entre otros, plano de cotas y niveles, pavimentos, detalles técnicos, definición de especies arbóreas, arbustivas y herbáceas, o iluminación. A partir de los planos se toman mediciones de todas las partidas de obra con el objetivo de presupuestar la construcción del jardín.',
-        imagen: '/img/PROCESO/paisajismo03-nueva.webp',
+        imagen: '/img/PROCESO/paisajismo03.webp',
     },
     {
         id: 4,

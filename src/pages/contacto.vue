@@ -13,12 +13,6 @@
 					<p class="f-12-info Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">Avenida de la Libertad 19</p>
 					<p class="f-12-info Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">Jávea, España</p>
 					<p class="f-12-info Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">(+34) 676 993 222</p>
-					<iframe
-						width="auto"
-						height="450"
-						class="mt-5"
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.626113240424!2d0.18928960000000003!3d38.77227870000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e0efdcb56b6c1%3A0xb10f9c49220214db!2sAv.%20de%20la%20Llibertad%2C%2019%2C%2003738%20J%C3%A1vea%2C%20Alicante%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sco!4v1724638253950!5m2!1ses-419!2sco"
-						style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</div>
 			<div class="w-[280px] mx-auto">
