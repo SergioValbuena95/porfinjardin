@@ -1,6 +1,6 @@
 <template>
     <div class="hc-84  flex flex-col items-center justify-center relative px-4">
-		<div class="flex w-10/12 lg:max-w-[850px] min-h-[500px] mx-auto gap-x-8">
+		<div class="flex lg:max-w-[850px] min-h-[500px] mx-auto gap-x-8">
 			<div class="w-[280px] hidden lg:block">
 				<div>
 					<p class="f-13-black-600">Contacto</p>
