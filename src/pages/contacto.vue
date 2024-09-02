@@ -1,7 +1,7 @@
 <template>
     <div class="hc-84  flex flex-col items-center justify-center relative px-4">
 		<div class="flex w-10/12 lg:max-w-[850px] min-h-[500px] mx-auto">
-			<div class="w-[480px] hidden lg:block">
+			<div class="w-[280px] hidden lg:block">
 				<div>
 					<p class="f-13-black-600">Contacto</p>
 					<p class="f-12-info Acumin-pro-wide Acumin-pro-wide-extra-light mb-2">Llámame  (+34) 676 993 222</p>
