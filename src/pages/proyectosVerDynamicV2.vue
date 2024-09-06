@@ -33,17 +33,20 @@
 		</swiper>
 	</div>
 	<!-- mobile -->
-	<div class="flex flex-col px-6 md:hidden py-5">
-		<p class="text-black Acumin-pro-wide text-3xl">{{ selectedProject[0].titulo }}</p>
-		<img :src="selectedProject[0].imagen" alt="" class="w-full my-4">
-		<p class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-base">{{ selectedProject[0].subtitulo }}</p>
+	<div v-if="selectedProject[0]" class="flex flex-col px-6 md:hidden py-5">
+		<p class="text-black Acumin-pro-wide text-xl">{{ selectedProject[0]?.titulo }}</p>
+		<img :src="selectedProject[0]?.imagen" alt="" class="w-full my-4">
+		<p v-if="selectedProject[0]?.subtitulo" class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-base">{{ selectedProject[0]?.subtitulo }}</p>
 		<div class="bg-[#7A7A7A] h-[1px] w-full my-4" />
-		<p class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-sm">{{ selectedProject[0].descripcion }}</p>
+		<p class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-base">Estado: {{ selectedProject[0]?.estado }}</p>
+		<div v-if="selectedProject[0]?.estado" class="bg-[#7A7A7A] h-[1px] w-full my-4" />
+		<p v-if="selectedProject[0]?.descripcion" class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-sm">{{ selectedProject[0]?.descripcion }}</p>
+		<p v-if="selectedProject[0]?.subdescripcion" class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-sm mt-4">{{ selectedProject[0]?.subdescripcion }}</p>
 		<div class="bg-[#7A7A7A] h-[1px] w-full my-4" />
 		<p class="text-[#7A7A7A] Acumin-pro-wide  text-base text-center ">Galería</p>
 		<div class="bg-[#7A7A7A] h-[1px] w-full my-4" />
 		<div class="flex flex-col gap-y-4">
-			<img v-for="(img, idx) in selectedProject[0].imagenes.slice(1)" :key="idx" :src="img" alt="">
+			<img v-for="(img, idx) in selectedProject[0]?.imagenes.slice(1)" :key="idx" :src="img" alt="">
 		</div>
 	</div>
 </template>
