@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="hidden md:block">
 		<swiper
 		:modules="modules"
 		:slidesPerView="1"
@@ -32,6 +32,20 @@
 			</swiper-slide>
 		</swiper>
 	</div>
+	<!-- mobile -->
+	<div class="flex flex-col px-6 md:hidden py-5">
+		<p class="text-black Acumin-pro-wide text-3xl">{{ selectedProject[0].titulo }}</p>
+		<img :src="selectedProject[0].imagen" alt="" class="w-full my-4">
+		<p class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-base">{{ selectedProject[0].subtitulo }}</p>
+		<div class="bg-[#7A7A7A] h-[1px] w-full my-4" />
+		<p class="text-[#7A7A7A] Acumin-pro-wide Acumin-pro-wide-extra-light text-sm">{{ selectedProject[0].descripcion }}</p>
+		<div class="bg-[#7A7A7A] h-[1px] w-full my-4" />
+		<p class="text-[#7A7A7A] Acumin-pro-wide  text-base text-center ">Galería</p>
+		<div class="bg-[#7A7A7A] h-[1px] w-full my-4" />
+		<div class="flex flex-col gap-y-4">
+			<img v-for="(img, idx) in selectedProject[0].imagenes.slice(1)" :key="idx" :src="img" alt="">
+		</div>
+	</div>
 </template>
 
 <script setup>
@@ -63,7 +77,7 @@ const projectsList = ref([
         id: 'CalaGranadellaJavea',
         titulo: 'Cala Granadella · Jávea',
         subtitulo: 'Un jardín estrictamente mediterráneo de líneas limpias',
-        descripcion: 'Vivienda unifamiliar en una sola planta en la zona de Granadella , en Jávea . El jardín busca respetar las líneas limpias de la arquitectura, integrando espacios y recorridos y contribuyendo a l a estética con un área estancial rodeada de una celosía de madera igual que la de la fachada. La selección de especies sigue la misma línea pulcra y austera, con masas continuas, toques de gramíneas y colores uniformes en la gama de los azules.',
+        descripcion: 'Vivienda unifamiliar en una sola planta en la zona de Granadella, en Jávea. El jardín busca respetar las líneas limpias de la arquitectura, integrando espacios y recorridos y contribuyendo a l a estética con un área estancial rodeada de una celosía de madera igual que la de la fachada. La selección de especies sigue la misma línea pulcra y austera, con masas continuas, toques de gramíneas y colores uniformes en la gama de los azules.',
         estado: 'Obra en construcción - Año 2024.',
         imagen: '/img/PROYECTOS/01CalaGranadellaJavea/Cala Granadella - A.webp',
         imagenes: [
@@ -195,7 +209,7 @@ const projectsList = ref([
     {
         id: 'AmetllaDelValles',
         titulo: `L´Ametlla del Vallès · Barcelona`,
-        subtitulo: null ,
+        subtitulo: null,
         descripcion: 'Vivienda de nueva construcción con un toque clásico dentro de una parcela con ligeras pendientes que se aprovechan para crear diferentes niveles que devuelven ambientes distintos. La vegetación, mediterránea, acompaña suavemente los estanciales y recorridos. La simplicidad y el cuidado en e l trazado del espacio es la clave de este proyecto.',
         estado: 'Obra pendiente de construcción.',
         imagen: '/img/PROYECTOS/08Alzira/Alzira-01.webp',
@@ -212,7 +226,7 @@ const projectsList = ref([
         id: 'Alzira',
         titulo: 'Alzira · Valencia',
         subtitulo: 'Jardín delicado en una vivienda unifamiliar muy cuidada.',
-        descripcion: 'Pequeño jardín de una vivienda cuyo interiorismo está cuidado al máximo detalle en Alzira, Valencia. Las líneas orgánicas , en combinación con la arquitectura y los materiales del interior, devuelven un aspecto singular, que combina con las piedras escultóricas y la vegetación cuidadosamente seleccionada.',
+        descripcion: 'Pequeño jardín de una vivienda cuyo interiorismo está cuidado al máximo detalle en Alzira, Valencia. Las líneas orgánicas, en combinación con la arquitectura y los materiales del interior, devuelven un aspecto singular, que combina con las piedras escultóricas y la vegetación cuidadosamente seleccionada.',
         estado: 'Obra terminada - Año 2023.',
         imagen: '/img/PROYECTOS/08Alzira/Alzira-01.webp',
 		imagenes: [

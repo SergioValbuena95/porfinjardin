@@ -1,9 +1,9 @@
 <template>
-	<header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 min-h-[84px] lg:pe-8">
+	<header class="bg-white sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3 min-h-[84px] lg:pe-8 shadow md:shadow-none sticky top-0 md:relative">
 		<div class="flex items-center justify-between px-4 py-3 sm:p-0">
 		<div>
 			<router-link :to="{ name: 'home' }">
-				<img class="h-14" src="/img/logoNoemiAntonBold.png" alt="Noemi anton logo">
+				<img class="h-14" src="/img/LogoBold.png" alt="Noemi anton logo">
 			</router-link>
 		</div>
 		<div class="sm:hidden">

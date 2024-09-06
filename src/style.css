@@ -137,10 +137,6 @@ button:focus-visible {
 /**/
 
 /* */
-.slider-process .swiper-pagination-bullet-active{
-  color: red !important
-}
-
 .hc-84{
 	height: calc(100dvh - 84px);
 }
